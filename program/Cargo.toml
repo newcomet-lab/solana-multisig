@@ -1,0 +1,22 @@
+[package]
+name = "solana_multisig"
+version = "0.0.0"
+license = "Proprietary"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+solana-program = "1.7"
+borsh = "0.9"
+borsh-derive = "0.9"
+thiserror = "1.0"
+
+[dev-dependencies]
+solana-program-test = "1.7"
+tokio = { version = "1.0", features = ["macros"]}
+solana-sdk = "1.7"
